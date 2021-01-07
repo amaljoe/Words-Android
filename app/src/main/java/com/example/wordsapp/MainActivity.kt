@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.layout_menu, menu)
+        setIcon(menu?.findItem(R.id.action_switch_layout))
         return true
     }
 
